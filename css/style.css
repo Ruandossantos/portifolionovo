@@ -1,0 +1,13 @@
+:root{
+    --font-padrao:"Montserrat", sans-serif;
+    
+}
+:root{
+    --main-bg-color: brown;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
