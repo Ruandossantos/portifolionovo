@@ -1,16 +1,15 @@
 :root{
-   --color-hover:#daa520;
+   --color-hover:rgb(255, 34, 207);
 }
         /*Engloba todo o meu Header*/
 #meu-cabecalho{
-    background-image: linear-gradient(0deg,#4d4c4cda,rgba(0, 0, 0, 0.959)),url(/img/backgraund/bg.header.jpg);
+    background-color: black;
     color: aliceblue;
     min-height: 100vh;
     width: 100%;
-    display: none;
+    display: flex;
     justify-content: center;
     flex-direction: column;
-    background-color: rgb(0, 0, 0);
 }
 
             /*ESTLIZAÇÃO HEADER PARA DESKTOP*/
@@ -258,7 +257,7 @@
             /*Estlização do meu Main*/
 
 main{
-    background-color: lemonchiffon;
+    background-color: var(--color-hover);
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -278,13 +277,11 @@ main .h1-sobremim{
 
 main .h1-sobremim h1{
     font-family: var(--font-padrao);
-    color: var(--color-hover);
     font-size: 1.2rem;
     text-transform: uppercase;
 }
 main .h1-sobremim .funcao{
     font-family: var(--font-padrao);
-    color: var(--color-hover);
     font-size: .9rem;
     text-transform: uppercase;
     font-weight: 500;
@@ -295,9 +292,11 @@ main .containersobre{
     min-height: 30vh;   
     font-family: var(--font-padrao);
     display: flex;
-    
+  
 }
-
+main.conteiner .borda{
+    border: 1px solid black;
+}
 .containersobre .textosmobre{
     width: 86%;
     min-height:100%;
