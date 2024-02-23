@@ -1,17 +1,23 @@
 :root{
-   --color-hover:rgb(255, 34, 207);
+    --princ-color: #f0eeee;
+    --secun-color:#fff;
+   --color-hover:#ffffff;
+   --backgraund: #040b5f;
 }
+
         /*Engloba todo o meu Header*/
 #meu-cabecalho{
-    background-color: black;
-    color: aliceblue;
+    background-image: linear-gradient(0deg, #040c5ff1,#040c5fec),url(../img/backgraund/tendencias-em-tecnologia-para-2023-o-que-ja-vingou-o-que-ficou-pelo-caminho-e-novas-apostas.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--princ-color);
     min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-
+    
             /*ESTLIZAÇÃO HEADER PARA DESKTOP*/
 #menu-nav{
     height: 6vh;
@@ -22,19 +28,18 @@
     position: fixed;
     top: 0;
     padding-right: 50px;
-    background-color: rgba(0, 0, 0, 0.747);
+    background-color: var(--backgraund);
     font-family:var(--font-padrao);
-    animation: opacy-header 1s 1 ease-in-out ;
+    animation: opacy-header 1s 1 ease-in-out;
 }
+
 @keyframes opacy-header {
-    0%{
-        opacity: 0;
+    0%{ 
+        transform: translateY(-20px);
     }
     100%{
-
     }
 }
-
 
 #itens-menu{
     display: flex;
@@ -44,7 +49,9 @@
     justify-content: flex-end;
     align-items: center;
     gap: 70px;
+    color: var(--princ-color);
 }
+
 
 #itens-menu li{
     list-style: none;
@@ -54,7 +61,9 @@
     transform: scale(0.9);
     transition: .2s;
     cursor: pointer;
+    
 }
+
 #itens-menu li:hover::before{
     content: "";
     top: 15px;
@@ -84,7 +93,8 @@
 
         /*Engloba todo o meu conteudo abaixo do menu*/
 .continer-conteudos{
-    color: aliceblue;
+    
+    color:var(--princ-color);
     width: 100%;
     min-height: 94vh;
     display: flex;
@@ -93,33 +103,43 @@
     /*Estlização lado esquerdo, onde contem redes e botão*/
 .conteudoladoesquerdo{
     min-height: 100%;
-    width:60%;
+    width:100%;
     flex-direction: column;
     display: flex;
     align-items: center;
 }
 .conteudoladoesquerdo h1 {
-    font-size: 2rem;
-    font-weight: 500;
+    font-size: 2.5rem;
+    font-weight: 600;
     font-family: var(--font-padrao);
-    padding-top: 15%;
+    padding-top: 10%;
+    animation: contheader 1s 1 ease-in-out;
 }
+@keyframes contheader {
+    0%{
+        transform: translateY(-20px);
+    }
+    
+}
+
 .conteudoladoesquerdo span{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: var(--font-padrao);
-    font-weight: 500;
+    font-weight: 600;
+    animation: contheader 1s 1 ease-in-out;
 }
 
 .conteudoladoesquerdo h2{
     font-size: 1.1rem;
     font-family: var(--font-padrao);
-    font-weight: 400;
+    font-weight: 500;
     padding-top: 20px;
-    color: var(--color-hover);
+    color: var(--secun-color);
+    animation: contheader 1s 1 ease-in-out;
 }
                 /*Abaixo do Ruan, contem logos de redes sociais*/
 .contatosheadar{
-    color: aliceblue;
+    color: rgb(0, 118, 221);
     width: 90%;
     height: 10%;
     display: flex;
@@ -131,11 +151,11 @@
 
 .contatosheadar a{
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    animation: contheader 1s 1 ease-in-out;
 }
 
 .contatosheadar a i{
-    color: aliceblue;
+ color: var(--princ-color);
  font-size: 1rem;
  font-family: var(--font-padrao);
  font-style:normal;
@@ -147,24 +167,26 @@
 
          /*estilização do botão (mais sobre mim) no headar*/
 .btnheadaer{
-    width: 30%;
+    width: 20%;
     height: 6%;
     font-family:var(--font-padrao);
-    font-weight: 400;
+    font-weight: 500;
     font-size: .8rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 15px;
-    border: 1px solid var(--color-hover);
-    color: var(--color-hover);
+    border: 1px solid var(--princ-color);
+    color: var(--secun-colore);
     cursor: pointer;
-    margin-top: 10%;
+    margin-top: 4%;
+    background-color: #040b5f;
+    animation: contheader 1s 1 ease-in-out;
 }
 .btnheadaer:hover{
-    background-color: #daa520;
-    border: 1px solid #fff;
-    color: #fff;
+    background-color:#fff;
+    border: 1px solid var(--backgraund);
+    color: black;
 }
 
 
@@ -173,9 +195,9 @@
         /*Engloba tudo do lado direito*/
 .conteudoladodireiro{
     min-height: 100%;
-    width: 40%;
+    width: 0%;
     align-items: center;
-    display: flex;
+    display: none;
 }
         /*img destaque lado direito*/
 .conteudoladodireiro img{
