@@ -1,13 +1,13 @@
 :root{
     --princ-color: #f0eeee;
     --secun-color:#fff;
-   --color-hover:#ffffff;
-   --backgraund: #040b5f;
+   --color-hover:#7ffaea;
+   --backgraund: #000000;
 }
 
         /*Engloba todo o meu Header*/
 #meu-cabecalho{
-    background-image: linear-gradient(0deg, #040c5ff1,#040c5fec),url(../img/backgraund/tendencias-em-tecnologia-para-2023-o-que-ja-vingou-o-que-ficou-pelo-caminho-e-novas-apostas.jpg);
+    background-image: linear-gradient(180deg, #000000f8,#000000f6),url(../img/backgraund/tendencias-em-tecnologia-para-2023-o-que-ja-vingou-o-que-ficou-pelo-caminho-e-novas-apostas.jpg);
     background-position: center;
     background-size: cover;
     color: var(--princ-color);
@@ -133,8 +133,8 @@
     font-size: 1.1rem;
     font-family: var(--font-padrao);
     font-weight: 500;
-    padding-top: 20px;
-    color: var(--secun-color);
+    padding-top: 15px;
+    color: var(--color-hover);
     animation: contheader 1s 1 ease-in-out;
 }
                 /*Abaixo do Ruan, contem logos de redes sociais*/
@@ -146,12 +146,13 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .contatosheadar a{
     text-decoration: none;
     animation: contheader 1s 1 ease-in-out;
+    position: relative;
 }
 
 .contatosheadar a i{
@@ -159,11 +160,35 @@
  font-size: 1rem;
  font-family: var(--font-padrao);
  font-style:normal;
+ position: relative;
 }
+
+
 .contatosheadar a i:hover{
     color: var(--color-hover)
 }
 
+.contatosheadar a i span{
+    color: var(--princ-color);
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--font-padrao);
+    font-style:normal;
+    transform: scale(.9);
+}
+.contatosheadar a i span:hover{
+    color: var(--color-hover);
+    transform: scale(1);
+}
+.contatosheadar a i span:hover::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 80%;
+    top:100%;
+    border-bottom: 1px solid var(--color-hover);
+    animation: before .4s 1 ease-in-out;
+}
 
          /*estilização do botão (mais sobre mim) no headar*/
 .btnheadaer{
@@ -180,7 +205,7 @@
     color: var(--secun-colore);
     cursor: pointer;
     margin-top: 4%;
-    background-color: #040b5f;
+    background-color: black;
     animation: contheader 1s 1 ease-in-out;
 }
 .btnheadaer:hover{
@@ -279,7 +304,9 @@
             /*Estlização do meu Main*/
 
 main{
-    background-color: var(--color-hover);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -373,7 +400,16 @@ main.conteiner .borda{
 .sobrecomplementares 
 .intersobrelis li{
     padding-top: 10px;
+    font-size: .8rem;;
 }
+.containerhabilidades
+.sobrecomplementares 
+.intersobrelis li > span{
+    font-size: .8rem;
+    color: firebrick;
+    font-weight: 500;
+}
+
 .imglogos{
     width: 20%;
     height:10%;
