@@ -1,13 +1,100 @@
 :root{
     --font-padrao:"Montserrat", sans-serif;
-    
-}
-:root{
     --main-bg-color: brown;
 }
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     
+}
+
+/*Estlização do header*/
+.containerheader{
+    min-height:100vh;
+    width: 100%;
+    background-image: line;
+}
+
+.containerheader
+.meuheader{
+    width: 100%;
+    min-height:5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.containerheader
+.meuheader
+.menu{
+    width: 90%;
+    min-height:5vh;
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.containerheader
+.meuheader
+.menu 
+.logo{
+    width: 20%;
+    height: 80%;
+    font-family: "Rubik Broken Fax", system-ui;
+    font-size: 4vh;
+    font-size: 2vw;
+}
+
+.containerheader
+.meuheader
+.menu 
+.links{
+    width: 80%;
+    height: 4vh;
+    position: relative;
+}
+
+.containerheader
+.meuheader
+.menu 
+.links ul{
+    display: flex;
+    gap: 10%;
+    list-style: none;
+    font-size: .8vw;
+    justify-content: flex-end;
+}
+.containerheader
+.meuheader
+.menu 
+.links ul li{
+    padding-top: 5px;
+    font-family: var(--font-padrao);
+    font-weight: 500;
+    cursor: pointer;
+}
+.containerheader
+.meuheader
+.menu 
+.links ul li:hover{
+    color: red;
+}
+.containerheader
+.meuheader
+.menu 
+.links ul li:hove::before{
+    content: "";
+    top: 0;
+    width: 100%;
+    height: 2px;
+}
+
+
+
+.containerheader
+.donwheader{
+    width: 100%;
+    min-height:95vh;
 }
