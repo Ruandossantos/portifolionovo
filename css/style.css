@@ -1,0 +1,180 @@
+
+:root{
+    --font-padrao:"Montserrat", sans-serif;
+    --main-bg-color: brown;
+    --color-hover:  rgb(0, 255, 106);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.body{
+    position: relative;
+    background-color: rebeccapurple;
+}
+
+/*Estlização do header*/
+.containerheader{
+    min-height:100vh;
+    width: 100%;
+    background-image: linear-gradient(45deg, #242424f3,#000000ef), url(../img/backgraund/wallpaper_1366x768_workstation-2.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/*CONTEINER DO MEU MENU DE NAVEGAÇÃO*/
+.containerheader
+.meuheader{
+    width: 100%;
+    min-height:5vh;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.containerheader
+.meuheader
+.menu{
+    width: 90%;
+    min-height:6vh;
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+/*ESTILIZAÇÃO DA MINHA LOGO*/
+.containerheader
+.meuheader
+.menu 
+.logo{
+    width: 20%;
+    height: 80%;
+    font-family: "Rubik Broken Fax", system-ui;
+    font-size: 4vh;
+    font-size: 2vw;
+}
+
+/*ESTILIZAÇÃO DO MEU MENU / CONTEM OS LINKS PARA ACESSO*/
+.containerheader
+.meuheader
+.menu 
+.links{
+    width: 80%;
+    height: 4vh;
+    position: relative;
+}
+
+.containerheader
+.meuheader
+.menu 
+.links ul{
+    display: flex;
+    gap: 5%;
+    list-style: none;
+    font-size: .8vw;
+    justify-content: flex-end;
+}
+.containerheader
+.meuheader
+.menu 
+.links ul li{
+    padding-top: 5px;
+    font-family: var(--font-padrao);
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+}
+.containerheader
+.meuheader
+.menu 
+.links ul li:hover{
+    color: var(--color-hover);
+}
+.containerheader
+.meuheader
+.menu 
+.links ul li:hover::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 110%;
+    top: 100%;
+    background-color: var(--color-hover);
+    animation:hoverbtnheadaer .7s 1 ease-in-out ;
+}
+
+/*ANIMAÇÃO DO MEU HOVER BEFORE, HEADER*/
+@keyframes hoverbtnheadaer {
+    0%{
+        width: 0%;
+    }
+}
+
+
+/**/
+.containerheader
+.donwheader{
+    width: 100%;
+    min-height:95vh;
+    display: flex;
+}
+
+.donwheader .conteinerleft{
+    width: 50%;
+    min-height: 94vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.donwheader .conteinerleft span{
+    font-size: 4vh;
+    font-family: var(--font-padrao);
+    margin-top: 25%;
+    margin-bottom: 4%;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.donwheader .conteinerleft h1{
+    font-size: 10vh;
+    font-family: "Scope One", serif;
+    font-weight: 900;
+    color: var(--color-hover);
+}
+
+.donwheader .conteinerrigth{
+    width: 50%;
+    min-height: 94vh;
+}
+
+.donwheader .meuslinks{
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+.donwheader .meuslinks a{
+    text-decoration: none;
+
+}
+
+.donwheader .meuslinks i{
+    font-size: 2vh;
+   padding: 10px;
+   color: white;
+   font-style: normal;
+   font-family: var(--font-padrao);
+}
+
+.donwheader .meuslinks i:hover{
+   color: var(--color-hover);
+}
