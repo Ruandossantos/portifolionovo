@@ -1,7 +1,7 @@
 :root{
     --font-padrao:"Montserrat", sans-serif;
     --main-bg-color: brown;
-    --color-hover:  blue;
+    --color-hover:  rgb(0, 255, 106);
 }
 
 *{
@@ -12,28 +12,18 @@
 }
 .body{
     position: relative;
-}
-
-.cardbakgraund{
-    position: absolute;
-    width:100%;
-    min-height: 100vh;
-    background-image: line;
-    background-image: linear-gradient(45deg, black, #ff0000e3), url(../img/backgraund/tendencias-em-tecnologia-para-2023-o-que-ja-vingou-o-que-ficou-pelo-caminho-e-novas-apostas.jpg);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    border-top-left-radius:0% ;
-    border-bottom-left-radius:0px ;
-    border-bottom-right-radius: 100%;
-    z-index: -1;
+    background-color: rebeccapurple;
 }
 
 /*Estlização do header*/
 .containerheader{
     min-height:100vh;
     width: 100%;
-    background-color: rgb(182, 182, 182);
+    background-image: linear-gradient(45deg, #242424f3,#000000ef), url(../img/backgraund/wallpaper_1366x768_workstation-2.jpg);
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /*CONTEINER DO MEU MENU DE NAVEGAÇÃO*/
@@ -44,14 +34,13 @@
     display: flex;
     justify-content: center;
     color: #fff;
-    z-index: ;
 }
 
 .containerheader
 .meuheader
 .menu{
     width: 90%;
-    min-height:5vh;
+    min-height:6vh;
     display: flex;
     justify-content:space-between;
     gap: 10px;
@@ -132,4 +121,59 @@
 .donwheader{
     width: 100%;
     min-height:95vh;
+    display: flex;
+}
+
+.donwheader .conteinerleft{
+    width: 50%;
+    min-height: 94vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.donwheader .conteinerleft span{
+    font-size: 4vh;
+    font-family: var(--font-padrao);
+    margin-top: 25%;
+    margin-bottom: 4%;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+.donwheader .conteinerleft h1{
+    font-size: 10vh;
+    font-family: "Scope One", serif;
+    font-weight: 900;
+    color: var(--color-hover);
+}
+
+.donwheader .conteinerrigth{
+    width: 50%;
+    min-height: 94vh;
+}
+
+.donwheader .meuslinks{
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+.donwheader .meuslinks a{
+    text-decoration: none;
+
+}
+
+.donwheader .meuslinks i{
+    font-size: 2vh;
+   padding: 10px;
+   color: white;
+   font-style: normal;
+   font-family: var(--font-padrao);
+}
+
+.donwheader .meuslinks i:hover{
+   color: var(--color-hover);
 }
