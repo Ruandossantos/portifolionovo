@@ -20,7 +20,7 @@
 .containerheader{
     min-height:100vh;
     width: 100%;
-    background-image: linear-gradient(45deg, #242424f3,#000000ef), url(../img/backgraund/wallpaper_1366x768_workstation-2.jpg);
+    background-image: linear-gradient(45deg, #0e0e0ef3,#000000fa), url(../img/backgraund/wallpaper_1366x768_workstation-2.jpg);
     background-position: center center;
     background-size:cover;
     background-repeat: no-repeat;
@@ -86,7 +86,7 @@
 .links ul li{
     padding-top: 5px;
     font-family: var(--font-padrao);
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     position: relative;
 }
@@ -102,11 +102,11 @@
 .links ul li:hover::before{
     position: absolute;
     content: "";
-    height: 2px;
+    height: 1px;
     width: 110%;
     top: 100%;
     background-color: var(--color-hover);
-    animation:hoverbtnheadaer .7s 1 ease-in-out ;
+    animation:hoverbtnheadaer .4s 1 ease-in-out ;
 }
 
 /*ANIMAÇÃO DO MEU HOVER BEFORE, HEADER*/
@@ -133,10 +133,10 @@
     flex-direction: column;
 }
 
-.donwheader .conteinerleft span{
-    font-size: 4vh;
+.donwheader .conteinerleft #text{
+    font-size: 1.2vw;
     font-family: var(--font-padrao);
-    margin-top: 25%;
+    margin-top: 20%;
     margin-bottom: 4%;
     font-weight: 500;
     color: #fff;
@@ -144,10 +144,29 @@
 
 
 .donwheader .conteinerleft h1{
-    font-size: 10vh;
+    font-size: 4.5vw;
     font-family: "Scope One", serif;
     font-weight: 900;
     color: var(--color-hover);
+}
+
+.donwheader .conteinerleft h1 a{
+    color: var(--color-hover);
+}
+.donwheader .conteinerleft h1 i{
+    animation: i 1s infinite ease-in-out alternate-reverse;
+}
+
+@keyframes i {
+   0%{
+    filter: drop-shadow(rgba(35, 204, 35, 0.658) 1px 1px 5px);
+   }
+   50%{
+    filter: drop-shadow(#259925a1 1px 1px 5px);
+   }
+   100%{
+    filter: drop-shadow(rgba(52, 177, 52, 0.664) 1px 1px 5px);
+   }
 }
 
 .donwheader .conteinerrigth{
@@ -157,7 +176,6 @@
 
 .donwheader .meuslinks{
     width: 100%;
-    gap: 20px;
     display: flex;
     justify-content: center;
     margin-top: 4%;
@@ -168,7 +186,7 @@
 }
 
 .donwheader .meuslinks i{
-    font-size: 2vh;
+font-size: 1vw;
    padding: 10px;
    color: white;
    font-style: normal;
@@ -177,4 +195,32 @@
 
 .donwheader .meuslinks i:hover{
    color: var(--color-hover);
+}
+
+
+/*ESTLIZAÇÃO DO BOTÃO SOBRE, ABAIXO DOS LINKS DE REDES*/
+
+.donwheader .conteinerleft .botaosobre{
+    width: 100%;
+    height:50px;
+    display: flex;
+    justify-content: end;
+    margin-top: 10%;
+}
+
+.donwheader .conteinerleft .botaosobre button{
+    height: 70%;
+    width: 40%;
+    border-radius: 10px;
+    background-color: var(--color-hover);
+    border: none;
+    cursor: pointer;
+    font-size: 1vw;
+    font-weight: 600;
+    font-family: var(--font-padrao);
+}
+
+.donwheader .conteinerleft .botaosobre button:hover{
+    color: white;
+    border: 1px solid white ;
 }
