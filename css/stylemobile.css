@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+   --fonte-pp:"Poppins", sans-serif;
+}
+@media screen and (max-width:450px) {
+    header{
+        background-color: whitesmoke;
+        width: 100%;
+        min-height: 100vh;
+    }
+    
+    /*Estilização do meu de link*/
+    .menuvanegacao{
+        width: 100%;   
+        height: 6vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menuvanegacao ul{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 3vw;
+    }
+
+    .menuvanegacao ul li{
+        list-style:none;
+        font-family: var(--fonte-pp);
+    }
+
+    /*Estilização do meu container principal das seçõese*/
+    .secaoconteiner{
+        width: 100%;
+        min-height: 94vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .ladoesquerdo{
+        width: 95%;
+        height:200px;
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .secaoconteiner .ladoesquerdo span{
+        font-size: 3.5vw;
+        font-family: var(--fonte-pp);
+    }
+
+    .secaoconteiner .ladoesquerdo h1{
+        font-size: 9.6vw;
+        padding-top: 0px;
+        margin-bottom: 2%;
+        font-family: var(--fonte-pp);
+    }
+    .secaoconteiner .ladoesquerdo h2{
+        font-size: 2.6vw;
+        font-weight: 400;
+        font-family: var(--fonte-pp);
+        margin-bottom: 7%;
+    }
+    .secaoconteiner .ladoesquerdo .meusbtns{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 15%;
+    }
+
+    .secaoconteiner .ladoesquerdo .meusbtns a i{
+        font-size: 6vw;
+    }
+
+    .secaoconteiner .ladoesquerdo .btnsobre{
+        width: 50%;
+        height: 30px;
+    }
+
+    .secaoconteiner .ladoesquerdo .btnsobre button{
+        font-family: var(--fonte-pp);
+        width: 100%;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+    }
+
+
+}
