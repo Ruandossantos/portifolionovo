@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bkg-desctop:#a34e16f3;
+    --principal: #000000;
+    --secundarias: white;
+    --fonte-pp:"Poppins", sans-serif;
+}
+@media screen and (min-width:1024px){ 
+
+/*Meu header contem meu menu e meis contudos da pagina*/
+header{
+    width: 100%;
+    min-height: 100vh;
+    padding: 10px;
+    background-image: linear-gradient(90deg,#d46419 ,#a34e16fa,#a34e16f3), url(../img/backgraund/codando.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/*Meu menu de navegação, contem os meus links*/
+.menuvanegacao{
+    width: 100%;
+    min-width: 4vh;
+    color: var(--principal);
+}
+.menuvanegacao ul{
+    padding-right: 25px;
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+}
+
+.menuvanegacao ul li{
+    list-style: none;
+    font-family: var(--fonte-pp);
+    font-weight: 600;
+    font-size: .9vw;
+    position:relative;
+    transform: scale(0.9);
+    transition: .5s;
+}
+.menuvanegacao ul li:hover{
+    color: var(--secundarias);
+    cursor: pointer;
+    transform: scale(1);
+}
+.menuvanegacao ul li:hover::before{
+    
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--secundarias);
+    top:100%; 
+    animation: hoverlinks .6s 1 ease-in-out;
+}
+@keyframes hoverlinks {
+    0%{
+        width: 0%;
+    }
+}
+
+
+/*seção que contem os meus dados abaixo do menu span, h1, links redes, e botão sobre*/
+
+.secaoconteiner{
+    width: 100%;
+    min-height: 93vh;
+    display: flex;
+    align-items: center;
+}
+
+
+/*div conteudos do lado esquedo, h1, meu nome, links, botão sobre*/
+.secaoconteiner .ladoesquerdo{
+    width: 60%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.secaoconteiner .ladoesquerdo span{
+    font-size: 1.5vw;
+    color: var(--secundarias);
+}
+
+.secaoconteiner .ladoesquerdo h1{
+    font-size: 5vw;
+    font-family: var(--fonte-pp);
+    color: var(--principal);
+}
+.secaoconteiner .ladoesquerdo h2{
+    font-size: 1vw;
+    font-weight: 400;
+    font-family: var(--fonte-pp);
+    color: var(--secundarias);
+    margin-bottom: 20px;
+}
+
+.meusbtns{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:15px;
+}
+
+.meusbtns a {
+    font-size: 1.5vw;
+    color: var(--principal);
+    padding: 10px;
+}
+
+.btnsobre{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 110px;
+}
+.btnsobre button{
+    width: 50%;
+    height: 50px;
+    font-family: var(--fonte-pp);
+    font-weight: 500;
+    font-size: 1.2vw;
+    color: var(--secundarias);
+    background-color: transparent;
+    border: 1px solid var(--principal);
+    border-radius: 10px;
+}
+.btnsobre button:hover{
+    border: 1px solid var(--secundarias);
+    color: var(--principal);
+    cursor: pointer;
+}
+/*div lado direito, onde contem uma imagem animada*/
+.ladodireito{
+    
+}
+
+
+
+
+}
