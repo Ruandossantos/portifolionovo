@@ -24,7 +24,6 @@ header{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    display: none;
 }
 
 /*Meu menu de navegação, contem os meus links*/
@@ -166,46 +165,115 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: imgflutuante 1s infinite ease-in-out;
 }
 .ladodireito img{
     width: 70%;
+    animation: imgflutuante 51s 1 ease-in-out alternate-reverse;
 }
 
+
+@keyframes imgflutuante {
+    0%{
+       transform: translateY(1px);
+    }
+    50%{
+        transform: translateY(-1px);
+    }
+    100%{
+        transform: translateY(1px);
+    }
+}
 /*Estilização da conteiner main*/
 
 .conteinermain{
-     width: 100%;
-     min-height: 100vh;
-     background-color: aliceblue;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-    }
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(45deg, #ffffffef, white), url(../img/backgraund/wallpaper_1366x768_workstation-2.jpg);
+    background-attachment: fixed;
+}
+.animation{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    background-color: #ea5851;
+}
+.animation2{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    top: 66.5%;
+    right:0;
+    background-color: #ea5851;
+}
+
 
 .sobre{
-    background-color: rgba(102, 51, 153, 0.575);
     width: 90%;
     min-height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .txtsobre{
     color: var(--color-hover);
     font-family: var(--fonte-montserrat);
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 50px;
 }
-.conteinerintro{
-    background-color: rgb(153, 16, 16);
+
+
+.textinicio{
+    width: 80%;
+    height: 70px;
+    font-size: 1vw;
+}
+
+.textinicio p{
+    font-family: var(--fonte-montserrat);
+    color: #000000;
+    text-indent: 10px;
+    text-justify:newspaper;
+    line-height: 20px;
+    font-weight: 450;
 }
 
 .textexperienciaehabilidade{
     color: var(--color-hover);
     font-family: var(--fonte-montserrat);
-    font-size: 1vw;
+    font-size: 1.1vw;
     font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    
 }
+.divhabilidades{
+    width: 80%;
+    height: 70px;
+    font-family: var(--fonte-montserrat);
+    font-size: 1vw;
+}
+.divhabilidades p{
+    text-align-last: left;
+    text-indent: 10px;
+    text-justify:newspaper;
+    line-height: 20px;
+    font-weight: 450;
+}
+
 
 
 }
