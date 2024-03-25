@@ -5,10 +5,14 @@
 }
 
 :root{
-    --bkg-desctop:#a34e16f3;
-    --principal: #000000;
-    --secundarias: white;
+    --bkg-desctop:#000000f3;
+    --principal: #1166a5;
+    --color-hover:#ea5851;
+    --secundarias: #000000;
     --fonte-pp:"Poppins", sans-serif;
+    --font-roboto:"Roboto", sans-serif;
+    --fonte-montserrat:"Montserrat", sans-serif;
+
 }
 @media screen and (min-width:1024px){ 
 
@@ -16,11 +20,11 @@
 header{
     width: 100%;
     min-height: 100vh;
-    padding: 10px;
-    background-image: linear-gradient(90deg,#d46419 ,#a34e16fa,#a34e16f3), url(../img/backgraund/codando.jpg);
+    background-image: linear-gradient(90deg,#ecebebf6 ,#ecebebf6,#ecebebf6), url();
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    display: none;
 }
 
 /*Meu menu de navegação, contem os meus links*/
@@ -28,6 +32,7 @@ header{
     width: 100%;
     min-width: 4vh;
     color: var(--principal);
+    padding-top: 10px;
 }
 .menuvanegacao ul{
     padding-right: 25px;
@@ -38,7 +43,7 @@ header{
 
 .menuvanegacao ul li{
     list-style: none;
-    font-family: var(--fonte-pp);
+    font-family: var(--fonte-montserrat);
     font-weight: 600;
     font-size: .9vw;
     position:relative;
@@ -46,7 +51,7 @@ header{
     transition: .5s;
 }
 .menuvanegacao ul li:hover{
-    color: var(--secundarias);
+    color: var(--color-hover);
     cursor: pointer;
     transform: scale(1);
 }
@@ -56,7 +61,7 @@ header{
     content: "";
     width: 100%;
     height: 1px;
-    background-color: var(--secundarias);
+    background-color: var(--color-hover);
     top:100%; 
     animation: hoverlinks .6s 1 ease-in-out;
 }
@@ -71,7 +76,7 @@ header{
 
 .secaoconteiner{
     width: 100%;
-    min-height: 93vh;
+    min-height: 92vh;
     display: flex;
     align-items: center;
 }
@@ -80,7 +85,7 @@ header{
 /*div conteudos do lado esquedo, h1, meu nome, links, botão sobre*/
 .secaoconteiner .ladoesquerdo{
     width: 60%;
-    min-height: 600px;
+    min-height: 550px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -90,17 +95,19 @@ header{
 .secaoconteiner .ladoesquerdo span{
     font-size: 1.5vw;
     color: var(--secundarias);
+    font-family: var(--fonte-montserrat);
 }
 
 .secaoconteiner .ladoesquerdo h1{
     font-size: 5vw;
-    font-family: var(--fonte-pp);
+    font-family: var(--fonte-montserrat);
     color: var(--principal);
+    font-weight: 900;
 }
 .secaoconteiner .ladoesquerdo h2{
     font-size: 1vw;
     font-weight: 400;
-    font-family: var(--fonte-pp);
+    font-family: var(--fonte-montserrat);
     color: var(--secundarias);
     margin-bottom: 20px;
 }
@@ -120,37 +127,85 @@ header{
     color: var(--principal);
     padding: 10px;
 }
+.meusbtns a:hover {
+    color: var(--color-hover);
+}
 
 .btnsobre{
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 90%;
-    height: 110px;
+    height: 60px;
 }
 .btnsobre button{
     width: 50%;
     height: 50px;
-    font-family: var(--fonte-pp);
+    font-family: var(--fonte-montserrat);
     font-weight: 500;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     color: var(--secundarias);
     background-color: transparent;
-    border: 1px solid var(--principal);
+    border: 2px solid var(--principal);
     border-radius: 10px;
 }
 .btnsobre button:hover{
-    border: 1px solid var(--secundarias);
-    color: var(--principal);
+    color:white;
     cursor: pointer;
+    background-color: #1166a5;
 }
+
+
+
+
 /*div lado direito, onde contem uma imagem animada*/
 .ladodireito{
-    
+    width: 40%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ladodireito img{
+    width: 70%;
 }
 
+/*Estilização da conteiner main*/
 
+.conteinermain{
+     width: 100%;
+     min-height: 100vh;
+     background-color: aliceblue;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    }
+
+.sobre{
+    background-color: rgba(102, 51, 153, 0.575);
+    width: 90%;
+    min-height: 90vh;
+}
+
+.txtsobre{
+    color: var(--color-hover);
+    font-family: var(--fonte-montserrat);
+    font-size: 1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.conteinerintro{
+    background-color: rgb(153, 16, 16);
+}
+
+.textexperienciaehabilidade{
+    color: var(--color-hover);
+    font-family: var(--fonte-montserrat);
+    font-size: 1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
 
 }

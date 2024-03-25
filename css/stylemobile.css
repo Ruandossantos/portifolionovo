@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 
-:root{
-    --principal: rgb(93, 223, 61);
-    --secundarias: white;
-    --fonte-pp:"Poppins", sans-serif;
-}
+
 @media screen and (max-width:950px) {
+
+    :root{
+        --principal: #1933c7;
+        --secundarias: rgb(0, 0, 0);
+        --fonte-pp:"Poppins", sans-serif;
+    }
+    
     header{
         background-image: linear-gradient(45deg, #0c0c0cf6, #000000f1), url(../img/backgraund/tendencias-em-tecnologia-para-2023-o-que-ja-vingou-o-que-ficou-pelo-caminho-e-novas-apostas.jpg);
         background-size: cover;background-position: center center;
@@ -106,6 +109,8 @@
         font-size: 3.4vw;
         background-color: var(--principal);
     }
-
+    .ladodireito{
+        display: none;
+    }
 
 }
