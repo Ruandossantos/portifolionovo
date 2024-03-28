@@ -24,6 +24,7 @@ header{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    display: none;
 }
 
 /*Meu menu de navegação, contem os meus links*/
@@ -191,6 +192,64 @@ header{
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    display: none;
 }
+
+
+/*estilização do meu footer*/
+.conteinerfooter{
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    align-items: center;
+}
+
+.meiocontato{
+    font-size: 1.3vw;
+    font-family: var(--fonte-montserrat);
+    color: var(--principal);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.conteudos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.contatosesquerda{
+    list-style: none;
+}
+.contatosesquerda ul li{
+    list-style: none;
+    font-family: var(--fonte-pp);
+    font-size: .9vw;
+}
+.contatosesquerda ul li span{
+    font-size: 1.1vw;
+    font-family: var(--fonte-montserrat);
+    color: #ea5851;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.direito{
+    font-family: var(--fonte-pp);
+    font-size: .7vw;
+
+}
+.contatosdireito{
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.contatosdireito a{
+    color:var(--principal);
+}
+
 
 }
