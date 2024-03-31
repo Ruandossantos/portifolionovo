@@ -6,7 +6,7 @@
 
 :root{
     --bkg-desctop:#000000f3;
-    --principal: #1166a5;
+    --principal: #0a0880;
     --color-hover:#ea5851;
     --secundarias: #000000;
     --fonte-pp:"Poppins", sans-serif;
@@ -24,7 +24,6 @@ header{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    display: none;
 }
 
 /*Meu menu de navegação, contem os meus links*/
@@ -79,6 +78,7 @@ header{
     min-height: 92vh;
     display: flex;
     align-items: center;
+    
 }
 
 
@@ -191,9 +191,97 @@ header{
     width: 100%;
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    display: none;
+    background-image: linear-gradient(45deg, #ecebebd8, #ecebebe0), url(../img/backgraund/wallpaper_1366x768_workstation-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
+.sobremin{
+    min-height: 90vh;
+    width: 90%;
+    display: flex;
+    box-shadow: 1px 1px 30px #00000049;
+    border-radius: 30px 0px 30px 0px;
+    margin-bottom: 30px;
+}
+.ladotexto{
+    min-height: 90vh;
+    width: 60%;
+    background-color: #ecebebf6;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px 0px 0px 0px;
+}
+
+.ladotexto h1{
+    font-family: var(--fonte-montserrat);
+    color: #ebcea2;
+    font-weight: 900;
+    font-size: 2vw;
+    margin-top: 20px;
+    text-align: center;
+    filter: drop-shadow(1px 1px 10px #8b8b8b4d);
+}
+.textosobremim {
+    margin-top: 25px;
+    width: 80%;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+.textosobremim p{
+    font-family: var(--font-roboto);
+    font-size: 1.5vw;
+}
+
+
+.ladofoto{
+    min-height: 90vh;
+    width: 40%;
+    background-image: linear-gradient(45deg, #3d3d3d11, #3d3d3d11), url(../img/backgraund/Screenshot_3.png);
+    background-position: center center;
+    background-size:contain;
+    border-radius: 0px 0px 30px 0px;
+}
+
+/*Aba do meu Portifolio*/
+
+.abaportifolio{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--principal);
+}
+.habilidades{
+    min-height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.textohabilidades{
+    font-family: var(--fonte-montserrat);
+    color: var(--principal);
+    font-weight: 900;
+    font-size: 2vw;
+    margin-top: 20px;
+    text-align: center;
+    filter: drop-shadow(1px 1px 10px #8b8b8b4d);
+}
+.imagenshabilidades img{
+    width: 5vw;
+    padding: 10px;
+
+}
+
+
+}
+
 
 
 /*estilização do meu footer*/
@@ -204,6 +292,7 @@ header{
     flex-direction: column;
     justify-content: center;   
     align-items: center;
+    display: none;
 }
 
 .meiocontato{
