@@ -28,11 +28,13 @@ ul{
     list-style: none;
     font-weight: 500;
     cursor: pointer;
+    font-size: .9vw;
     
 }
 li{
     position: relative;
 }
+
 ul li:hover::before{
     top: 100%;
     position:absolute;
@@ -40,6 +42,13 @@ ul li:hover::before{
     width: 100%;
     height: 1px;
     background-color: black;
+    animation: barraefeito 1s 1 ease-in-out;
+}
+
+@keyframes barraefeito{
+    0%{
+        width: 0%;
+    }
 }
 
 .containerheader{
@@ -56,8 +65,16 @@ ul li:hover::before{
     flex-direction: column;
     justify-content: end;
     gap: 20px; 
-    font-size: 1.4vw;
 }
+
+.logosredessociais i{
+font-size: 1vw;
+}
+.logosredessociais i:hover{
+    transform: scale(.9);
+    transition: .6s;
+}
+
 
 .meunometxt{
     min-height: 30vh;
