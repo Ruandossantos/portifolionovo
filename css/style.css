@@ -4,15 +4,26 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
+:root{
+    --colo-principal:#2d102c;
+}
 
-
+/*ESTILIZAÇÃO DO MEU MAIN HEADER*/
 .containertop{
     min-height: 100vh;
     width: 100%;
-    background-image:linear-gradient(45deg, #ebebebfb, #e9e9e9f6), url(../img/moon-2048727_1920.jpg);
+    background-image:linear-gradient(45deg, #ffffff00, #ffffff00), url(../img/594052.jpg);
+    background-position: top center;
+    background-size: cover;
     padding: 5vh;
 }
-
+.logo{
+    font-weight: 600;
+}
+.logo span{
+    color: #925aa8;
+}
+/*ESTILIZAÇÃO DO NAVBAR*/
 .menudenvagação{
     width: 100%;
     min-height: 4vh;
@@ -30,33 +41,42 @@ ul{
     cursor: pointer;
     font-size: .9vw;
     
+    
 }
 li{
     position: relative;
+    color: var(--colo-principal);
 }
-
+li:hover{
+    color: var(--colo-principal);
+    transform: scale(1.1);
+    transition: .2s;
+}
 ul li:hover::before{
     top: 100%;
     position:absolute;
     content: "";
     width: 100%;
     height: 1px;
-    background-color: black;
+    background-color: var(--colo-principal);
     animation: barraefeito 1s 1 ease-in-out;
 }
 
+/*ANIMAÇÃO DA BARRA DO NAVBAR*/
 @keyframes barraefeito{
     0%{
         width: 0%;
     }
 }
 
+/*CONTAINER MAIN, ONDE CONTEM LOGOS, NOME, IMAGEM, BTN*/
 .containerheader{
     width: 80%;
     height: 40vh;
     display: flex;
 }
 
+/*LADO ESQUERDO, ONDE COTEM LOGOS DE REDES*/
 .logosredessociais{
     width: 4%;
     min-height: 80vh;
@@ -69,15 +89,19 @@ ul li:hover::before{
 
 .logosredessociais i{
 font-size: 1vw;
+color: #ffdbc5;
+transform: scale(1);
+transition: .6s;
+
 }
 .logosredessociais i:hover{
-    transform: scale(.9);
+    transform: scale(1.1);
     transition: .6s;
 }
 
-
+/*SEÇÃO CENTRAL, ONDE CONTEM BOTÃO E NOMES*/
 .meunometxt{
-    min-height: 30vh;
+    min-height: 40vh;
     width: 80%;
     display: flex;
     justify-content: center;
@@ -92,6 +116,8 @@ font-size: 1vw;
 }
 .meunometxt h1{
     font-size: 4.5vw;
+    font-weight: 800;
+    color: var(--colo-principal);
 }
 
 .meunometxt h2{
@@ -105,4 +131,29 @@ font-size: 1vw;
     min-height: 80vh;
     width: 26%;
    
+}
+
+/*ESTLIZAÇÃO DO BOTÃO, DA MAIN*/
+
+.sbtnsobre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    margin-top: 40px;
+    border: none;
+    text-decoration: none;
+    background-color: var(--colo-principal);
+    color: #fcfcfc;
+}
+.sbtnsobre:hover{
+    background-color: #fe7f4a;
+    border: none;
+    transition: 1s ;
+    border: 1px solid var(--colo-principal);
+    
 }
