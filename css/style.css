@@ -6,6 +6,7 @@
 }
 :root{
     --colo-principal:#2d102c;
+    --color-hover:#fe7f4a;
 }
 
 /*ESTILIZAÇÃO DO MEU MAIN HEADER*/
@@ -19,9 +20,12 @@
 }
 .logo{
     font-weight: 600;
+    font-size: 1.2vw;
 }
 .logo span{
     color: #925aa8;
+    font-size: 1.2vw;
+    font-weight: 800;
 }
 /*ESTILIZAÇÃO DO NAVBAR*/
 .menudenvagação{
@@ -39,10 +43,10 @@ ul{
     list-style: none;
     font-weight: 500;
     cursor: pointer;
-    font-size: .9vw;
-    
-    
+    font-size: 1vw;
+    font-weight: 600;    
 }
+
 li{
     position: relative;
     color: var(--colo-principal);
@@ -88,8 +92,8 @@ ul li:hover::before{
 }
 
 .logosredessociais i{
-font-size: 1vw;
-color: #ffdbc5;
+font-size: 1.3vw;
+color: var(--colo-principal);
 transform: scale(1);
 transition: .6s;
 
@@ -97,11 +101,16 @@ transition: .6s;
 .logosredessociais i:hover{
     transform: scale(1.1);
     transition: .6s;
+    color: var(--color-hover);
 }
-
+.linha{
+    width: 1px;
+    height: 40%;
+    background-color: var(--colo-principal);
+}
 /*SEÇÃO CENTRAL, ONDE CONTEM BOTÃO E NOMES*/
 .meunometxt{
-    min-height: 40vh;
+    min-height: 30vh;
     width: 80%;
     display: flex;
     justify-content: center;
