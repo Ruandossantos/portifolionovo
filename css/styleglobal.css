@@ -5,25 +5,26 @@
     font-family: "Montserrat", sans-serif;
 }
 :root{
-    --colo-principal:#2d102c;
-    --color-hover:#fe7f4a;
+    --colo-principal:#f1efef;
+    --color-hover:#fbbf74;
 }
 
 /*ESTILIZAÇÃO DO MEU MAIN HEADER*/
 .containertop{
     min-height: 100vh;
     width: 100%;
-    background-image:linear-gradient(45deg, #ffffff00, #ffffff00), url(../img/1234.jpg);
-    background-position: top center;
+    background-image:linear-gradient(45deg, #00000000, #00000000), url(../img/1234.jpg);
+    background-position: center center;
     background-size: cover;
     padding: 5vh;
 }
 .logo{
     font-weight: 600;
     font-size: 1.2vw;
+    color: #f1efef;
 }
 .logo span{
-    color: #925aa8;
+    color: #fbbf74;
     font-size: 1.2vw;
     font-weight: 800;
 }
@@ -43,7 +44,7 @@ ul{
     list-style: none;
     font-weight: 500;
     cursor: pointer;
-    font-size: 1vw;
+    font-size: .9vw;
     font-weight: 600;    
 }
 
@@ -52,8 +53,7 @@ li{
     color: var(--colo-principal);
 }
 li:hover{
-    color: var(--colo-principal);
-    transform: scale(1.1);
+    color: var(--color-hover);
     transition: .2s;
 }
 ul li:hover::before{
@@ -62,7 +62,7 @@ ul li:hover::before{
     content: "";
     width: 100%;
     height: 1px;
-    background-color: var(--colo-principal);
+    background-color: var(--color-hover);
     animation: barraefeito 1s 1 ease-in-out;
 }
 
@@ -122,17 +122,19 @@ transition: .6s;
 }
 .meunometxt .nome{
     font-size: 2vw;
+    color: var(--colo-principal);
 }
 .meunometxt h1{
     font-size: 4.5vw;
     font-weight: 800;
-    color: var(--colo-principal);
+    color:var(--color-hover);
 }
 
 .meunometxt h2{
     margin-top: 20px;
     font-size: 1vw;
     font-weight: 400;
+    color: var(--colo-principal);
 }
 
 
@@ -151,19 +153,16 @@ transition: .6s;
     width: 45%;
     height: 40px;
     border-radius: 10px;
-    border: 1px solid black;
     background-color: transparent;
     margin-top: 40px;
     border: none;
     text-decoration: none;
-    background-color: var(--colo-principal);
-    color: #fcfcfc;
+    background-color: var(--color-hover);
+    color: #000;
 }
 .sbtnsobre:hover{
-    background-color: #fe7f4a;
-    border: none;
-    transition: 1s ;
-    border: 1px solid var(--colo-principal);
-
+    background-color:var(--colo-principal);
+    transition: 1s;
+    columns: #000;
 }
 	
