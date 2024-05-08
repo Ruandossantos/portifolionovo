@@ -20,12 +20,12 @@
 }
 .logo{
     font-weight: 600;
-    font-size: 1.2vw;
+    font-size: 0.9rem;
     color: #f1efef;
 }
 .logo span{
     color: #fbbf74;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
     font-weight: 800;
 }
 /*ESTILIZAÇÃO DO NAVBAR*/
@@ -44,7 +44,7 @@ ul{
     list-style: none;
     font-weight: 500;
     cursor: pointer;
-    font-size: .9vw;
+    font-size: .7rem;
     font-weight: 600;    
 }
 
@@ -75,7 +75,7 @@ ul li:hover::before{
 
 /*CONTAINER MAIN, ONDE CONTEM LOGOS, NOME, IMAGEM, BTN*/
 .containerheader{
-    width: 80%;
+    width: 86%;
     height: 40vh;
     display: flex;
 }
@@ -92,7 +92,7 @@ ul li:hover::before{
 }
 
 .logosredessociais i{
-font-size: 1.3vw;
+font-size: .9rem;
 color: var(--colo-principal);
 transform: scale(1);
 transition: .6s;
@@ -110,8 +110,8 @@ transition: .6s;
 }
 /*SEÇÃO CENTRAL, ONDE CONTEM BOTÃO E NOMES*/
 .meunometxt{
-    min-height: 30vh;
-    width: 80%;
+    min-height: 35vh;
+    width: 90%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -121,18 +121,18 @@ transition: .6s;
     line-height: 35px;
 }
 .meunometxt .nome{
-    font-size: 2vw;
+    font-size:.8rem;
     color: var(--colo-principal);
 }
 .meunometxt h1{
-    font-size: 4.5vw;
+    font-size: 4.3rem;
     font-weight: 800;
     color:var(--color-hover);
 }
 
 .meunometxt h2{
     margin-top: 20px;
-    font-size: 1vw;
+    font-size: .8rem;
     font-weight: 400;
     color: var(--colo-principal);
 }
