@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --font-roboto:"Roboto", sans-serif;
+    --font-poppins:"Poppins", sans-serif;
+    --color-font:#061f35;
+    --fonte-hoverbotão:#15202f;
+}
+/*Estilização do menu de Navegação*/
+body{
+    background-image: linear-gradient(45deg, #ffffff00, #ffffff00), url(../img/4355775.jpg);
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    height: 5vh;
+    padding: 0px 30px 0px 30px;
+}
+nav {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 6vh;
+    font-family: var(--font-poppins);
+    color: var(--color-font);
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-size: .9vw;
+    font-weight: 500;
+}
+
+.conteudo{
+    min-height: 95vh;
+    width: 100%;
+    display: flex;
+}
+
+.asides{
+    min-height: 95vh;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.asides i{
+    font-size: 1.4vw;
+    color: var(--color-font);
+}
+
+.conteudocentral{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+.conteudocentral
+.meusconteudos{
+    width: 100%;
+    height: 50%;
+    padding-left: 6%;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudocentral
+.meusconteudos
+.internomes{
+ line-height: 45px;
+}
+.conteudocentral span{
+    font-size: 2.5vw;
+    font-family: var(--font-roboto);
+    color: var(--color-font);
+}
+
+.conteudocentral
+.meusconteudos
+.internomes
+h1{
+    font-size: 6vw;    
+    font-family: var(--font-roboto);
+    font-weight: 900;
+    color: var(--color-font);
+}
+
+
+.meusconteudos .buttonm{
+    text-decoration: none;
+    font-size: 1.4vw;
+    font-family: var(--font-roboto);
+    color: var(--color-font);
+    font-weight: 500;
+}
+
+.conteudocentral button{
+    background-color: floralwhite;
+    border: none;
+    margin-top: 70px;
+    width: 200px;
+    height: 40px;
+}
+
+
+.conteudocentral a button:hover{
+    color: aliceblue;
+}
+.conteudocentral button:hover{
+    background-color: var(--fonte-hoverbotão);
+}
