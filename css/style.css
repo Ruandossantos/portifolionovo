@@ -8,12 +8,15 @@
     --font-poppins:"Poppins", sans-serif;
     --color-font:#061f35;
     --fonte-hoverbotão:#15202f;
+    --color-hovemenu: #3c6487;
 }
 /*Estilização do menu de Navegação*/
 body{
     background-image: linear-gradient(45deg, #ffffff00, #ffffff00), url(../img/4355775.jpg);
     background-size: cover;
 }
+
+/*Estilização do header (contem o menu de navegação)*/
 
 header{
     width: 100%;
@@ -30,6 +33,12 @@ nav {
     color: var(--color-font);
 }
 
+nav .logo span{
+    font-family: var(--font-poppins);
+    font-weight: 700;
+}
+
+
 nav ul{
     display: flex;
     gap: 40px;
@@ -38,12 +47,39 @@ nav ul{
     font-weight: 500;
 }
 
+nav ul li{
+    font-weight: 500;
+}
+nav ul li:hover{
+    color: var(--color-hovemenu);
+    cursor: pointer;
+    position:relative;
+}
+nav ul li:hover:before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    top: 100%;
+    background-color: var(--color-hovemenu);
+    animation: hoveranimation 1s 1 ease-in-out;
+}
+@keyframes hoveranimation {
+    0%{
+        width: 0%;
+    }
+}
+
+
+/*Engloba todo o meu conteudo abaixo do menu de navegação*/
 .conteudo{
     min-height: 95vh;
     width: 100%;
     display: flex;
 }
 
+
+/*Fica a direita, cotem meus icones de redes sociais*/
 .asides{
     min-height: 95vh;
     width: 60px;
@@ -58,6 +94,11 @@ nav ul{
     color: var(--color-font);
 }
 
+.asides :hover{
+    color: var(--color-hovemenu);
+}
+
+/*Conteudo central, fica nome, botão 'sobre mais'*/
 .conteudocentral{
     width: 100%;
     height: 95vh;
@@ -68,11 +109,10 @@ nav ul{
 .meusconteudos{
     width: 100%;
     height: 50%;
-    padding-left: 6%;
+    padding-left:10%;
     margin-top: 10%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .conteudocentral
 .meusconteudos
@@ -106,7 +146,7 @@ h1{
 
 .conteudocentral button{
     background-color: floralwhite;
-    border: none;
+    border: 1px solid var(--color-font);
     margin-top: 70px;
     width: 200px;
     height: 40px;
@@ -119,3 +159,6 @@ h1{
 .conteudocentral button:hover{
     background-color: var(--fonte-hoverbotão);
 }
+
+
+
