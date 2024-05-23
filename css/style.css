@@ -149,7 +149,7 @@ h1{
     background-color: var(--color-font);
     color: aliceblue;
     width: 200px;
-    height: 35px;
+    height: 45px;
     border-radius: 10px;
     border: none;
     margin-top: 10px;
@@ -179,7 +179,6 @@ h1{
     width: 100%;
     background-color:#dae6f2;
     display: flex;
-    padding: 6%;
 }
 
 .conteinersobremim2{
@@ -188,6 +187,7 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 70px;
 }
 .conteinersobremim #sobremim{
     font-size: 7vw;
@@ -218,14 +218,22 @@ h1{
     width: 100%;
     height: 70%;
     display: flex;
+    justify-content: center;
     gap: 40px;
 }
 
 .descicaointer{
-    width: 70%;
-    height: 100%;
+    width: 60%;
+    height: 70%;
+    margin-top: 70px;
+    padding: 10px;
     font-family: var(--font-poppins);
     color: var(--fonte-hoverbotão);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-hovemenu);
+    border-radius: 10px;
 }
 
 .descicaointer #paragrafo1 {
@@ -236,6 +244,7 @@ h1{
 
 .descicaointer #paragrafo1 #mudacor{
     color: var(--color-hovemenu);
+    
 }
 
 .descicaointer .descricaosobremim{
@@ -247,6 +256,23 @@ h1{
 .conteinerendereço{
     padding: 10px;
     font-family: var(--font-roboto);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--color-hovemenu);
+    border-radius: 10px;
+}
+.fotoeu{
+    margin-bottom: 20px;
+    width: 125px;
+    height: 160px;
+    border-radius: 50%;
+}
+.fotoeu img{
+    width: 100%;
+    border-radius: 50%;
+    border: px solid var(--color-hovemenu);
 }
 .conteinerendereço .enderecos span {
     color: var(--color-hovemenu);
@@ -260,13 +286,13 @@ h1{
 }
 
 
-
+/*Botão entra em contato, via WhatasApp*/
 
 .btnwhats{
     background-color: var(--color-font);
     color: aliceblue;
     width: 200px;
-    height: 35px;
+    height: 45px;
     border-radius: 10px;
     border: none;
     margin-top: 10px;
