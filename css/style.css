@@ -12,8 +12,6 @@
 }
 /*Estilização do menu de Navegação*/
 body{
-    background-image: linear-gradient(45deg, #ffffff00, #ffffff00), url(../img/4355775.jpg);
-    background-size: cover;
 }
 
 /*Estilização do header (contem o menu de navegação)*/
@@ -21,7 +19,8 @@ body{
 header{
     width: 100%;
     height: 5vh;
-    padding: 0px 30px 0px 30px;
+    padding: 6px 30px 0px 30px;
+    background-color:#dae6f2;
 }
 nav {
     justify-content: space-between;
@@ -76,6 +75,8 @@ nav ul li:hover:before{
     min-height: 95vh;
     width: 100%;
     display: flex;
+    background-image: linear-gradient(45deg, #ffffff00, #ffffff00), url(../img/4355775.jpg);
+    background-size: cover;
 }
 
 
@@ -145,20 +146,137 @@ h1{
 }
 
 .conteudocentral button{
-    background-color: floralwhite;
-    border: 1px solid var(--color-font);
-    margin-top: 70px;
+    background-color: var(--color-font);
+    color: aliceblue;
     width: 200px;
-    height: 40px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transform: scale(.9);
+    transition: 1s;
+    margin-top: 5%;
 }
 
 
 .conteudocentral a button:hover{
-    color: aliceblue;
+    
+    background-color: var(--color-hovemenu);
+    border: 1px solid var(--color-font);
+    transform: scale(1);
 }
 .conteudocentral button:hover{
     background-color: var(--fonte-hoverbotão);
 }
 
 
+/* Estilização seção sobre mim*/
 
+
+.conteinersobremim{
+    min-height: 100vh;
+    width: 100%;
+    background-color:#dae6f2;
+    display: flex;
+    padding: 6%;
+}
+
+.conteinersobremim2{
+    min-height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.conteinersobremim #sobremim{
+    font-size: 7vw;
+    font-family: var(--font-poppins);
+    font-weight: 900;
+    position: absolute;
+    color: #43444613;
+    display: flex;
+}
+
+.conteinersobremim2 .sobremim::before{
+    content: "";
+    height: 2px;
+    width: 70px;
+    background-color: var(--color-hovemenu);
+    position: absolute;
+}
+.conteinersobremim2 .sobremim #umpouco{
+    font-family: var(--font-roboto);
+    font-size: 3vw;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+
+.descricao{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    gap: 40px;
+}
+
+.descicaointer{
+    width: 70%;
+    height: 100%;
+    font-family: var(--font-poppins);
+    color: var(--fonte-hoverbotão);
+}
+
+.descicaointer #paragrafo1 {
+    font-size: 1rem;
+    font-family: var(--font-poppins);
+    font-weight: 700;
+}
+
+.descicaointer #paragrafo1 #mudacor{
+    color: var(--color-hovemenu);
+}
+
+.descicaointer .descricaosobremim{
+    font-size: .9rem;
+    font-family: var(--font-poppins);
+}
+
+
+.conteinerendereço{
+    padding: 10px;
+    font-family: var(--font-roboto);
+}
+.conteinerendereço .enderecos span {
+    color: var(--color-hovemenu);
+    font-weight: 600;
+    font-size: qrem;
+    
+}
+.conteinerendereço .enderecos p {
+    padding-bottom: 15px;
+    font-size: .9rem;
+}
+
+
+
+
+.btnwhats{
+    background-color: var(--color-font);
+    color: aliceblue;
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    transform: scale(.9);
+    transition: 1s;
+}
+
+.btnwhats:hover{
+    background-color: var(--color-hovemenu);
+    border: 1px solid var(--color-font);
+    transform: scale(1);
+}
