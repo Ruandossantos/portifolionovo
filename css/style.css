@@ -78,7 +78,6 @@ nav ul li:hover:before{
     display: flex;
     background-image: linear-gradient(45deg, #ffffff00, #ffffff00), url(../img/4355775.jpg);
     background-size: cover;
-    display: none;
 }
 
 
@@ -181,7 +180,6 @@ h1{
     width: 100%;
     background-color:#dae6f2;
     display: flex;
-    display: none;
 }
 
 .conteinersobremim2{
@@ -311,63 +309,3 @@ h1{
 }
 
 
-/*Estilização do carrossel*/
-
-.conteinercarrossel{
-    width: 100%;
-    height: 100vh;
-    background-color: #dae6f2;
-}
-
-.conteinerportifolionome{
-    min-height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 10px;
-}
-
-.conteinerportifolionome #portifolio1{
-    font-size: 5rem;
-    font-weight: 900;
-    font-family: var(--font-poppins);
-    position: absolute;
-    color: #dae6f25e;
-}
-
-.portifolio2{
-}
-.portifolio2 #portifolio3{
-    font-family: var(--font-roboto);
-    font-size: 3vw;
-    font-weight: 700;
-    display: flex;
-    justify-content: center;
-}
-
-
-.carousel-control-prev{
-    width: 7%;
-}
-.carousel-control-next{
-    width: 7%;
-}
-
-.carousel{
-    width: 70%;
-    height: 70vh;
-    margin: auto;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%);
-}
-
-
-.carousel-caption{
-    background-color:var(--color-font);
-}
-
-.carousel-indicators{
-}
