@@ -23,7 +23,9 @@ header{
     background-color:#dae6f2;
     position: fixed;
     z-index: 99;
+    animation: anibody  1s infinite ease-in-out;
 }
+
 
 nav {
     justify-content: space-between;
@@ -33,6 +35,13 @@ nav {
     height: 6vh;
     font-family: var(--font-poppins);
     color: var(--color-font);
+    animation: aniheader 1s 1 ease-in-out;
+}
+@keyframes aniheader {
+    0%{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
 }
 
 nav .logo span{
@@ -92,7 +101,15 @@ nav ul li:hover:before{
     align-items: center;
     justify-content: center;
     gap: 30px;
+    animation: aniaside  1s 1 ease-in-out; 
 }
+@keyframes aniaside {
+    0%{
+        transform: translateX(-50px);
+        opacity:  0;
+    }
+}
+
 .asides i{
     font-size: 1.4vw;
     color: var(--color-font);
@@ -134,7 +151,7 @@ nav ul li:hover:before{
 .internomes
 h1{
     font-size: 6vw;    
-    font-family: var(--font-roboto);
+    font-family: var(--font-poppins);
     font-weight: 900;
     color: var(--color-font);
 }
